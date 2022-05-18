@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Yair Casados</title>
+    </head>
+    <body>
+        
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+            <script>
+    /*linea que permite escribir*/
+    document.write('Hola mi nombre es Yair Casados');//escribo texto hola5
+    
+    document.write('<br>');//escribo una etiqueta html de  salto de línea en el texto (retorno de carro).
+    
+    document.write('Este es mi primer programa con javascript en este curso');
+    document.write('<br>');
+                document.write('<br>');
+    document.write('Soy diseñador gráfico, diseñador 3D e Ilustrador, soy fiel creyente que todos tenemos una parte creativa que podemos desarrollar7');
+    document.write('<br>');
+    document.write('He aprendido gracias a la Licenciatura de Diseño Gráfico y Animación Digital y a diferentes videos de YouTube a utilizar aplicaciones como Blender, Adobe Illustrator y Adobe Photoshop con los cuales he realizado animaciones y proyectos dirigidos al ámbito educativo.');
+    document.write('<br>');
+    document.write('Me puedes encontrar en Instagram como @casadosyair');
+    document.write('<br>');
+    document.write('<br>');
+                
+    document.write("Hagamos operaciones:");
+    document.write('<br>');
+    document.write('<br>');
+
+    /*creo variables*/
+    var ladopentagono;
+    var apotemapentagono;
+    var baseromboide;
+    var alturaromboide;
+    var ladorombo;
+    var diagonalmarombo;
+    var diagonalmerombo;
+
+    /*pido datos en un dialogo del explorador*/
+    ladopentagono=prompt('dame el lado del pentagono:','');//pido lado pentagono
+    apotemapentagono=prompt('dame la apotema del pentagono:','');//pido apotema pentagono
+    baseromboide=prompt('dame la base del romboide:','');//pido base romboide
+    alturaromboide=prompt('dame la altura del romboide:','');//pido altura romboide
+    ladorombo=prompt('dame el lado del rombo:','');//pido lado rombo
+    diagonalmarombo=prompt('dame la diagonal mayor del rombo:','');//pido diagonal mayor rombo
+    diagonalmerombo=prompt('dame la diagonal menor del rombo:','');//pido diagonal mayor rombo
+
+    /*convierto valores a valores numericos para poder hacer operaciones*/
+    ladopentagono=parseInt(ladopentagono);
+    apotemapentagono=parseInt(apotemapentagono);
+    baseromboide=parseInt(baseromboide);
+    alturaromboide=parseInt(alturaromboide);
+    ladorombo=parseInt(ladorombo);
+    diagonalmarombo=parseInt(diagonalmarombo);
+    diagonalmerombo=parseInt(diagonalmerombo);
+
+    /*hago operaciones*/
+    
+    var perimetropentagono=ladopentagono * 5;
+    var areapentagono=((perimetropentagono * apotemapentagono) / 2);
+    
+    var perimetroromboide=baseromboide + baseromboide + alturaromboide + alturaromboide;
+    var arearomboide=baseromboide * alturaromboide;
+                
+    var perimetrorombo=ladorombo + ladorombo + ladorombo + ladorombo;
+    var arearombo=diagonalmarombo * diagonalmerombo;
+
+    /*escribo resultados*/
+    document.write('El perimetro del pentagono es: ');
+    document.write(perimetropentagono);
+    document.write('<br>');
+    document.write('<br>');
+    document.write('El area del pentagono es: ');
+    document.write(areapentagono);
+    document.write('<br>');
+    document.write('<br>');
+    document.write('El perimetro del romboide es: ');
+    document.write(perimetroromboide);
+    document.write('<br>');
+    document.write('<br>');
+    document.write('El area del romboide es: ');
+    document.write(arearomboide);
+    document.write('<br>');
+    document.write('<br>');
+    document.write('El perimetro del rombo es: ');
+    document.write(perimetrorombo);
+    document.write('<br>');
+    document.write('<br>');
+    document.write('El area del rombo es: ');
+    document.write(arearombo);
+
+</script>
+                    </div>
+                </section>
+ 
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2022 Yair Casados. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="variables.js"></script>
+        
+    </body>
+</html>
